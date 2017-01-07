@@ -3,12 +3,11 @@
 @import './styles/typography';
 
 @include md-core();
-@include docs-site-typography();
-$primary: md-palette($md-cyan);
-$accent: md-palette($md-amber, A200, A100, A400);
+$primary: md-palette($md-light-blue);
+$accent: md-palette($md-pink, A200, A100, A400);
 $theme: md-light-theme($primary, $accent);
 @include angular-material-theme($theme);
-@include material-docs-app-theme($theme);
+@include app-theme($theme);
 
 body {
   font-family: 'Roboto','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
