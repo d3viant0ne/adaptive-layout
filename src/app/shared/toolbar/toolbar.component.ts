@@ -4,7 +4,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'flex-toolbar',
   template: `
       <md-toolbar class="flex-toolbar md-elevation-z6">
-        <img class="angular-logo" src="../../../assets/img/toolbar/angular-transparent.svg" alt="Angular Flex Layout">
+        <img class="angular-logo"
+             src="../../../assets/img/toolbar/angular-transparent.svg"
+             alt="Angular Flex Layout">
         {{title}}
       </md-toolbar>
     `,
