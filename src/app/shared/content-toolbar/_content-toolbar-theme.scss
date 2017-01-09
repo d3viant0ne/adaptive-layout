@@ -6,10 +6,10 @@
   $foreground: map-get($theme, foreground);
 
   flex-content-toolbar {
-    color: md-color($primary, default-contrast);
+    color: md-color($accent, default-contrast);
 
     .flex-content-toolbar {
-      background: md-color($primary);
+      background: md-color($accent);
     }
   }
 }

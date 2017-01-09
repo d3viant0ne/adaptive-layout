@@ -1,5 +1,6 @@
 @import '~@angular/material/core/theming/theming';
 @import './app/shared/toolbar/toolbar-theme';
+@import './app/shared/content-toolbar/content-toolbar-theme';
 
 @mixin app-theme($theme) {
   $primary: map-get($theme, primary);
@@ -18,4 +19,5 @@
   }
 
   @include toolbar-theme($theme);
+  @include content-toolbar-theme($theme);
 }
