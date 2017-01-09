@@ -5,6 +5,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
 
 import { FlexToolbarComponent } from './toolbar/toolbar.component';
+import { FlexContentToolbarComponent } from './content-toolbar/content-toolbar.component';
 import { FlexFooterComponent } from './footer/footer.component';
 
 
@@ -15,8 +16,8 @@ import { FlexFooterComponent } from './footer/footer.component';
     BrowserModule,
     MaterialModule,
   ],
-  declarations: [FlexToolbarComponent, FlexFooterComponent],
-  exports: [FlexToolbarComponent, FlexFooterComponent],
+  declarations: [FlexToolbarComponent, FlexContentToolbarComponent, FlexFooterComponent],
+  exports: [FlexToolbarComponent, FlexContentToolbarComponent, FlexFooterComponent],
   providers: [],
   entryComponents: [],
 })

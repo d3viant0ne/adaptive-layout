@@ -1,0 +1,15 @@
+@mixin content-toolbar-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  flex-content-toolbar {
+    color: md-color($primary, default-contrast);
+
+    .flex-content-toolbar {
+      background: md-color($primary);
+    }
+  }
+}
