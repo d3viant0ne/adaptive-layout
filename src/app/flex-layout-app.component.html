@@ -1,3 +1,11 @@
-<flex-toolbar></flex-toolbar>
-<router-outlet></router-outlet>
-<flex-footer></flex-footer>
+<div class="appContainer" fxLayout="column">
+  <div class="toolbarContainer">
+    <flex-toolbar class="appToolbar" fxLayoutAlign="center"></flex-toolbar>
+  </div>
+  <div class="contentContainer">
+    <router-outlet class="appContent" fxLayoutAlign="center"></router-outlet>
+  </div>
+  <div class="footerContainer">
+    <flex-footer class="appFooter"></flex-footer>
+  </div>
+</div>
