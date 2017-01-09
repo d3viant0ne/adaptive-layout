@@ -1,10 +1,74 @@
 @import '~@angular/material/core/theming/all-theme';
 @import './styles/theme';
 @import './styles/typography';
+$fx-red: (
+  50: #fff,
+  100: #fcdddd,
+  200: #f8aaaa,
+  300: #f36868,
+  400: #f04b4b,
+  500: #ee2f2f,
+  600: #eb1313,
+  700: #cf1111,
+  800: #b30f0f,
+  900: #960c0c,
+  A100: #fff,
+  A200: #fcdddd,
+  A400: #f04b4b,
+  A700: #cf1111,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+$fx-dark-grey: (
+  50: #efefef,
+  100: #c8c8c8,
+  200: #acacac,
+  300: #898989,
+  400: #797979,
+  500: #6a6a6a,
+  600: #5b5b5b,
+  700: #4b4b4b,
+  800: #3c3c3c,
+  900: #2d2d2d,
+  A100: #f0f0f0,
+  A200: #e7e7e7,
+  A400: #797979,
+  A700: #4b4b4b,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
 
 @include md-core();
-$primary: md-palette($md-light-blue);
-$accent: md-palette($md-pink, A200, A100, A400);
+$primary: md-palette($fx-red);
+$accent: md-palette($fx-dark-grey, 900, A200, A100);
 $theme: md-light-theme($primary, $accent);
 @include angular-material-theme($theme);
 @include app-theme($theme);

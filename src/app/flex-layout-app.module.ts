@@ -8,10 +8,16 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from './shared/shared-module';
 import { FlexLayoutAppComponent } from './flex-layout-app.component';
 import { FlexLayoutAppRoutingModule } from './flex-layout-app-routing.module';
+import { DashboardComponent } from './features/dashboard.component';
+import { StaticComponent } from './features/static/static.component';
+import { ResponsiveComponent } from './features/responsive/responsive.component';
 
 @NgModule({
   declarations: [
-    FlexLayoutAppComponent
+    FlexLayoutAppComponent,
+    DashboardComponent,
+    StaticComponent,
+    ResponsiveComponent
   ],
   imports: [
     BrowserModule,
