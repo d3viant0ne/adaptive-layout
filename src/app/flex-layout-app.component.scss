@@ -1,24 +1,24 @@
-.appContainer {
+.app-container {
   background-color: #e7e7e7;
   height: 100vh;
   width: 100%;
 }
 
-.toolbarContainer {
+.toolbar-container {
   background-color: #ee2f2f;
   position: fixed;
   width: 100%;
   z-index: 900;
   margin-left: auto;
   margin-right: auto;
-  .appToolbar {
+  .app-toolbar {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.contentContainer {
+.content-container {
   background-color: #e7e7e7;
   padding-top: 80px;
   width: 100%;
@@ -26,21 +26,21 @@
   margin-left: auto;
   margin-right: auto;
 
-  .contentToolbarContainer {
+  .content-toolbar-container {
     background-color: #2d2d2d;
     position: fixed;
     width: 100%;
     z-index: 800;
     margin-left: auto;
     margin-right: auto;
-    .contentToolbar {
+    .content-toolbar {
       max-width: 1440px;
       margin-left: auto;
       margin-right: auto;
     }
   }
 
-  .appContent {
+  .app-content {
     padding-top: 80px;
     max-width: 1440px;
     margin-left: auto;
@@ -48,7 +48,7 @@
   }
 }
 
-.footerContainer {
+.footer-container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
