@@ -5,9 +5,10 @@
 
 
 @include md-core();
-$primary: md-palette($fx-red);
-$accent: md-palette($fx-dark-grey, 900, A200, A100);
-$theme: md-light-theme($primary, $accent);
+$accent: md-palette($fx-cyan, 400, 600, A200);
+$primary: md-palette($fx-dark-grey, 500, A200, A100);
+$warn: md-palette($fx-red, 400);
+$theme: md-light-theme($primary, $accent, $warn);
 @include angular-material-theme($theme);
 @include app-theme($theme);
 
