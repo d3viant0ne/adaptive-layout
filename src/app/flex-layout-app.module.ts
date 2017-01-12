@@ -22,10 +22,10 @@ import { ResponsiveComponent } from './features/responsive/responsive.component'
   imports: [
     BrowserModule,
     BrowserModule,
-    SharedModule,
     FlexLayoutAppRoutingModule,
     MaterialModule.forRoot(),
-    FlexLayoutModule.forRoot()
+    FlexLayoutModule.forRoot(),
+    SharedModule
   ],
   providers: [],
   bootstrap: [FlexLayoutAppComponent]

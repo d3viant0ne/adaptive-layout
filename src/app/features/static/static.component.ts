@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-static',
+  selector: 'flex-static',
   templateUrl: './static.component.html',
   styleUrls: ['./static.component.scss']
 })

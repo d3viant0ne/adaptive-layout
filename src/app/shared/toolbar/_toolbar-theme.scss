@@ -6,9 +6,8 @@
   $foreground: map-get($theme, foreground);
 
   flex-toolbar {
-    color: md-color($accent, default-contrast);
-
     .flex-toolbar {
+      color: md-color($primary, 100);
       background: md-color($primary);
     }
   }

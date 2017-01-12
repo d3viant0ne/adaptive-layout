@@ -1,3 +1,5 @@
+import { ResponsiveComponent } from './features/responsive/responsive.component';
+import { StaticComponent } from './features/static/static.component';
 import { DashboardComponent } from './features/dashboard.component';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -13,6 +15,14 @@ export const routes: Routes = [
     path: '',
     redirectTo: '/dashboard',
     pathMatch: 'full'
+  },
+  {
+    path: 'static',
+    component: StaticComponent
+  },
+  {
+    path: 'responsive',
+    component: ResponsiveComponent
   }
 
 ];

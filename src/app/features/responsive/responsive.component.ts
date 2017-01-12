@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-responsive',
+  selector: 'flex-responsive',
   templateUrl: './responsive.component.html',
   styleUrls: ['./responsive.component.scss']
 })

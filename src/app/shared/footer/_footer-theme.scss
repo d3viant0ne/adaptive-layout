@@ -6,9 +6,8 @@
   $foreground: map-get($theme, foreground);
 
   flex-footer {
-    color: md-color($accent, default-contrast);
-
     .flex-footer {
+      color: md-color($primary, default-contrast);
       background: md-color($primary, A200);
     }
   }
