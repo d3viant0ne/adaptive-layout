@@ -1,4 +1,5 @@
 @import '~@angular/material/core/theming/all-theme';
+@import './styles/variables';
 @import './styles/colors';
 @import './styles/theme';
 @import './styles/typography';
@@ -13,14 +14,10 @@ $theme: md-light-theme($primary, $accent, $warn);
 @include app-theme($theme);
 
 body {
-  font-family: 'Roboto','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+  font-family: $font-family;
   margin: 0;
 }
 
 [md-button], [md-raised-button] {
   text-transform: uppercase;
 }
-
-// h1, h2 {
-//   font-weight: 400;
-// }
