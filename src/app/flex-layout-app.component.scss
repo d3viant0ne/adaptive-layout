@@ -9,7 +9,7 @@
 }
 
 .toolbar-container {
-  background-color: map-get($fx-dark-grey, 500);
+  // background-color: map-get($fx-dark-grey, 500);
   position: fixed;
   width: 100%;
   z-index: 900;
@@ -17,6 +17,7 @@
   margin-right: auto;
   .app-toolbar {
     max-width: 1440px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }

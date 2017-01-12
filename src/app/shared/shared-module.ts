@@ -1,3 +1,4 @@
+import { FlexLayoutModule } from '@angular/flex-layout';
 import {NgModule} from '@angular/core';
 import {HttpModule} from '@angular/http';
 import {MaterialModule} from '@angular/material';
@@ -15,6 +16,7 @@ import { FlexFooterComponent } from './footer/footer.component';
     RouterModule,
     BrowserModule,
     MaterialModule,
+    FlexLayoutModule
   ],
   declarations: [FlexToolbarComponent, FlexContentToolbarComponent, FlexFooterComponent],
   exports: [FlexToolbarComponent, FlexContentToolbarComponent, FlexFooterComponent],
