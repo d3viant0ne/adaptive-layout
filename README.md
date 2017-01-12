@@ -1,4 +1,6 @@
-# FlexLayoutDemo
+# Adaptive Layout
+
+Just a place to play around with adaptive layout concepts using the Angular platform.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
