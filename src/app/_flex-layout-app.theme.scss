@@ -18,11 +18,16 @@
   }
 
   .content-toolbar-container {
-    background: md-color($primary, 500);
+    background: md-color($warn, 400);
   }
 
   .app-sidenav {
     color: md-color($primary, 500);
     background: md-color($accent, 50);
+  }
+
+  .app-sidebar {
+    color: md-color($primary, 400);
+    background: md-color($primary, 700);
   }
 }

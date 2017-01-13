@@ -19,6 +19,14 @@
   width: 256px;
   box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12) !important;
 }
+
+.app-sidebar {
+  min-width: 100px;
+  z-index: 800 !important;
+  width: 356px;
+  box-shadow: inset 0 3px 3px -2px rgba(0, 0, 0, .2), inset 0 3px 4px 0 rgba(0, 0, 0, .14), inset 0 1px 8px 0 rgba(0, 0, 0, .12) !important;
+}
+
 .toolbar-container {
   position: fixed;
   width: 100%;
@@ -26,7 +34,7 @@
   margin-left: auto;
   margin-right: auto;
   .app-toolbar {
-    max-width: 1440px;
+    max-width: 0;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -46,7 +54,7 @@
     margin-left: auto;
     margin-right: auto;
     .content-toolbar {
-      max-width: 1440px;
+      max-width: 1280px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -55,7 +63,7 @@
   .app-content {
     padding-top: 164px;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -66,7 +74,7 @@
   margin-left: auto;
   margin-right: auto;
   .app-footer {
-    max-width: 1440px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
   }

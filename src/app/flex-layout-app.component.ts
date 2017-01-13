@@ -10,25 +10,37 @@ import 'rxjs/add/operator/filter';
   encapsulation: ViewEncapsulation.None
 })
 export class FlexLayoutAppComponent {
-  private _subscription;
-  public isOpen = true;
-  public mediaChange;
+  private _sidenavSubscription;
+  private _sidebarSubscription;
+  public isSidenavOpen: boolean = true;
+  public isSidebarOpen: boolean = true;
+  public sidenavMediaChange;
+  public sidebarMediaChange;
   public isDarkTheme = false;
   public showShadow = true;
 
-  constructor( @Inject(MatchMediaObservable) public $media) {
-    this._subscription = $media.subscribe((change: MediaChange) => {
-      this.isOpen = (change.mqAlias !== 'sm' && change.mqAlias !== 'xs');
-      this.mediaChange = change;
+  constructor( @Inject(MatchMediaObservable) public $sidenavMedia, @Inject(MatchMediaObservable) public $sidebarMedia) {
+    this._sidenavSubscription = $sidenavMedia.subscribe((sidenavChange: MediaChange) => {
+      this.isSidenavOpen = (sidenavChange.mqAlias !== 'sm' && sidenavChange.mqAlias !== 'xs');
+      this.sidenavMediaChange = sidenavChange;
+    });
+    this._sidebarSubscription = $sidebarMedia.subscribe((sidebarChange: MediaChange) => {
+      this.isSidebarOpen = (sidebarChange.mqAlias === 'xl');
+      this.sidebarMediaChange = sidebarChange;
     });
   }
 
   ngOnDestroy() {
-    this._subscription.unsubscribe();
+    this._sidenavSubscription.unsubscribe();
+    this._sidebarSubscription.unsubscribe();
   }
 
   toggleSideNav() {
-    this.isOpen = !this.isOpen;
+    this.isSidenavOpen = !this.isSidenavOpen;
+  }
+
+  toggleSideBar() {
+    this.isSidebarOpen = !this.isSidebarOpen;
   }
 
 }
