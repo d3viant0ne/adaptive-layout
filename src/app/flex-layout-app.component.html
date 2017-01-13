@@ -1,16 +1,20 @@
-<div class='app-container' fxLayout='column'>
-  <div class='toolbar-container' fxLayoutAlign="center center">
-    <flex-toolbar class='app-toolbar' fxLayoutAlign='start center'></flex-toolbar>
-  </div>
-  <div class='content-container' fxLayoutAlign="center">
-    <div class='content-toolbar-container md-elevation-z6'>
-      <flex-content-toolbar class='content-toolbar' fxLayoutAlign='center'></flex-content-toolbar>
+<flex-toolbar class='app-toolbar md-elevation-z4' fxLayoutAlign='start center'></flex-toolbar>
+<md-sidenav-container>
+  <md-sidenav #sidenav mode="side" [opened]="isOpen" class="app-sidenav">
+    <flex-sidenav></flex-sidenav>
+  </md-sidenav>
+  <!--<flex-sidenav class="app-sidenav">Sidenav</flex-sidenav>-->
+  <div class='app-container' fxLayout='column'>
+    <div class='content-container' fxLayoutAlign="center">
+      <div class='content-toolbar-container'>
+        <flex-content-toolbar class='content-toolbar' fxLayoutAlign='center'></flex-content-toolbar>
+      </div>
+      <div class='app-content' fxLayoutAlign='center'>
+        <router-outlet></router-outlet>
+      </div>
     </div>
-    <div class='app-content' fxLayoutAlign='center'>
-      <router-outlet></router-outlet>
+    <div class='footer-container'>
+      <flex-footer class='app-footer'></flex-footer>
     </div>
   </div>
-  <div class='footer-container'>
-    <flex-footer class='app-footer'></flex-footer>
-  </div>
-</div>
+  <md-sidenav-container>

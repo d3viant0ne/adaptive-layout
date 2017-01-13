@@ -1,0 +1,14 @@
+@mixin sidenav-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  flex-sidenav {
+    .flex-sidenav {
+      color: md-color($primary, 100);
+      background: md-color($primary);
+    }
+  }
+}

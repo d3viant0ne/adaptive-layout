@@ -1,3 +1,4 @@
+import { FlexSidenavComponent } from './sidenav/sidenav.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {NgModule} from '@angular/core';
 import {HttpModule} from '@angular/http';
@@ -18,8 +19,8 @@ import { FlexFooterComponent } from './footer/footer.component';
     MaterialModule,
     FlexLayoutModule
   ],
-  declarations: [FlexToolbarComponent, FlexContentToolbarComponent, FlexFooterComponent],
-  exports: [FlexToolbarComponent, FlexContentToolbarComponent, FlexFooterComponent],
+  declarations: [FlexToolbarComponent, FlexSidenavComponent, FlexContentToolbarComponent, FlexFooterComponent],
+  exports: [FlexToolbarComponent, FlexSidenavComponent, FlexContentToolbarComponent, FlexFooterComponent],
   providers: [],
   entryComponents: [],
 })
