@@ -10,5 +10,11 @@
       color: md-color($primary, 100);
       background: md-color($primary);
     }
+
+    .sidenav-title {
+      color: md-color($primary, 100);
+      background: md-color($primary, A100);
+      border-color: md-color($accent, 200);
+    }
   }
 }

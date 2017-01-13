@@ -18,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./toolbar.component.scss']
 })
 export class FlexToolbarComponent implements OnInit {
-  title: string = 'Flex Layout';
+  title: string = 'Adaptive Layout';
   constructor() { }
 
   ngOnInit() { }

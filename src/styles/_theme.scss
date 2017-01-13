@@ -1,6 +1,7 @@
 @import '~@angular/material/core/theming/theming';
-@import './app/shared/toolbar/toolbar.theme';
 @import './app/flex-layout-app.theme';
+@import './app/shared/sidenav/sidenav.theme';
+@import './app/shared/toolbar/toolbar.theme';
 @import './app/shared/content-toolbar/content-toolbar.theme';
 @import './app/shared/footer/footer.theme';
 
@@ -16,6 +17,7 @@
   }
 
   @include flex-layout-app-theme($theme);
+  @include sidenav-theme($theme);
   @include toolbar-theme($theme);
   @include content-toolbar-theme($theme);
   @include footer-theme($theme);

@@ -18,7 +18,7 @@ export class FlexLayoutAppComponent {
 
   constructor( @Inject(MatchMediaObservable) public $media) {
     this._subscription = $media.subscribe((change: MediaChange) => {
-      this.isOpen = (change.mqAlias !== 'sm');
+      this.isOpen = (change.mqAlias !== 'sm' && change.mqAlias !== 'xs');
       this.mediaChange = change;
     });
   }
