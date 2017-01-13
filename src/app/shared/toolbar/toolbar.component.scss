@@ -1,13 +1,22 @@
 .flex-toolbar {
   width: 100%;
-  button {
-    justify-content: center;
-    padding-right: 10px;
-  }
+}
+
+button {
+  justify-content: center;
+  padding-right: 10px;
+}
+
+span {
+  padding-left: 10px;
 }
 
 .angular-logo {
   margin: 0 4px 3px 0;
   height: 40px;
   vertical-align: middle;
+}
+
+.toolbar-more {
+  margin-left: auto;
 }

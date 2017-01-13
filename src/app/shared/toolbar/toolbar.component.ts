@@ -11,7 +11,12 @@ import { Component, OnInit } from '@angular/core';
         <img class="angular-logo"
              src="../../../assets/img/toolbar/angular-transparent.svg"
              alt="Angular Flex Layout">
-        {{title}}
+        <span fxHide="false" fxHide.xs>{{title}}</span>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="end center" class='toolbar-more'>
+        <button md-icon-button fxLayoutAlign="end center">
+          <md-icon>more</md-icon>
+        </button>
       </div>
     </md-toolbar>
     `,
