@@ -12,20 +12,21 @@ import 'rxjs/add/operator/filter';
 export class FlexLayoutAppComponent {
   private _sidenavSubscription;
   private _sidebarSubscription;
-  public isSidenavOpen: boolean = true;
-  public isSidebarOpen: boolean = true;
+  public isSidenavOpen = true;
+  public isSidebarOpen = true;
   public sidenavMediaChange;
   public sidebarMediaChange;
   public isDarkTheme = false;
   public showShadow = true;
 
+  // TODO: @d3viant0ne - Get this into services ( need to fix md-toolbar trapping first )
   constructor( @Inject(MatchMediaObservable) public $sidenavMedia, @Inject(MatchMediaObservable) public $sidebarMedia) {
-    this._sidenavSubscription = $sidenavMedia.subscribe((sidenavChange: MediaChange) => {
+    this._sidenavSubscription = this.$sidenavMedia.subscribe((sidenavChange: MediaChange) => {
       this.isSidenavOpen = (sidenavChange.mqAlias !== 'sm' && sidenavChange.mqAlias !== 'xs');
       this.sidenavMediaChange = sidenavChange;
     });
-    this._sidebarSubscription = $sidebarMedia.subscribe((sidebarChange: MediaChange) => {
-      this.isSidebarOpen = (sidebarChange.mqAlias === 'xl');
+    this._sidebarSubscription = this.$sidebarMedia.subscribe((sidebarChange: MediaChange) => {
+      this.isSidebarOpen = (sidebarChange.mqAlias !== 'xs' && sidebarChange.mqAlias !== 'sm' && sidebarChange.mqAlias !== 'md');
       this.sidebarMediaChange = sidebarChange;
     });
   }
