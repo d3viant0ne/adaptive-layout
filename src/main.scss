@@ -6,10 +6,15 @@
 
 
 @include md-core();
-$accent: md-palette($fx-cyan, 400, 600, A200);
-$primary: md-palette($fx-dark-grey, 500, A200, A100);
-$warn: md-palette($fx-red, 400);
-$theme: md-light-theme($primary, $accent, $warn);
+$light-accent: md-palette($fx-cyan, 400, 600, A200);
+$light-primary: md-palette($fx-dark-grey, 500, A200, A100);
+$light-warn: md-palette($fx-red, 400);
+$light-theme: md-light-theme($light-primary, $light-accent, $light-warn);
+$dark-accent: md-palette($md-dark-accent, 500, 700, A200);
+$dark-primary: md-palette($md-dark-primary, 900, 700, A700);
+$dark-warn: md-palette($md-dark-warn, 500);
+$dark-theme: md-dark-theme($dark-primary, $dark-accent, $dark-warn);
+$theme: $light-theme;
 @include angular-material-theme($theme);
 @include app-theme($theme);
 
