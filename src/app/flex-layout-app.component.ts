@@ -9,7 +9,7 @@ import 'rxjs/add/operator/filter';
   styleUrls: ['./flex-layout-app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class FlexLayoutAppComponent {
+export class FlexLayoutAppComponent implements OnDestroy {
   private _sidenavSubscription;
   private _sidebarSubscription;
   public isSidenavOpen = true;
@@ -22,11 +22,14 @@ export class FlexLayoutAppComponent {
   // TODO: @d3viant0ne - Get this into services ( need to fix md-toolbar trapping first )
   constructor( @Inject(MatchMediaObservable) public $sidenavMedia, @Inject(MatchMediaObservable) public $sidebarMedia) {
     this._sidenavSubscription = this.$sidenavMedia.subscribe((sidenavChange: MediaChange) => {
-      this.isSidenavOpen = (sidenavChange.mqAlias !== 'sm' && sidenavChange.mqAlias !== 'xs');
+      this.isSidenavOpen = (sidenavChange.mqAlias !== 'md' && sidenavChange.mqAlias !== 'sm' && sidenavChange.mqAlias !== 'xs');
       this.sidenavMediaChange = sidenavChange;
     });
     this._sidebarSubscription = this.$sidebarMedia.subscribe((sidebarChange: MediaChange) => {
-      this.isSidebarOpen = (sidebarChange.mqAlias !== 'xs' && sidebarChange.mqAlias !== 'sm' && sidebarChange.mqAlias !== 'md');
+      this.isSidebarOpen = (sidebarChange.mqAlias !== 'lg' &&
+                            sidebarChange.mqAlias !== 'md' &&
+                            sidebarChange.mqAlias !== 'sm' &&
+                            sidebarChange.mqAlias !== 'xs');
       this.sidebarMediaChange = sidebarChange;
     });
   }
