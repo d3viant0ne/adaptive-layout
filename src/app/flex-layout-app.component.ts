@@ -13,7 +13,7 @@ export class FlexLayoutAppComponent implements OnDestroy {
   private _sidenavSubscription;
   private _sidebarSubscription;
   public isSidenavOpen = true;
-  public isSidebarOpen = true;
+  public isSidebarOpen = false;
   public sidenavMediaChange;
   public sidebarMediaChange;
   public isDarkTheme = false;
@@ -30,6 +30,7 @@ export class FlexLayoutAppComponent implements OnDestroy {
                             sidebarChange.mqAlias !== 'md' &&
                             sidebarChange.mqAlias !== 'sm' &&
                             sidebarChange.mqAlias !== 'xs');
+      // this.isSidebarOpen = (sidebarChange.mqAlias === 'xl');
       this.sidebarMediaChange = sidebarChange;
     });
   }
