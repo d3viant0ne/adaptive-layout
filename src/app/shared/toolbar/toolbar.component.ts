@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <md-toolbar class="flex-toolbar">
       <div fxLayout="row" fxLayoutAlign="start center">
-        <button md-icon-button fxHide="false" fxHide.gt-sm>
+        <button md-icon-button fxHide="false" fxHide.gt-md>
           <md-icon>menu</md-icon>
         </button>
         <img class="angular-logo"
