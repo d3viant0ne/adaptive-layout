@@ -5,8 +5,8 @@
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
-  flex-footer {
-    .flex-footer {
+  al-footer {
+    .al-footer {
       color: md-color($primary, 200);
       background: md-color($primary, A200);
     }

@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'flex-footer',
+  selector: 'al-footer',
   template: `
-    <footer class="flex-footer">
+    <footer class="al-footer">
     Powered by Angular. License MIT.
     </footer>
     `,
   styleUrls: ['./footer.component.scss']
 })
-export class FlexFooterComponent implements OnInit {
+export class FooterComponent implements OnInit {
 
   constructor() { }
 
