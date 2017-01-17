@@ -1,0 +1,20 @@
+@mixin sidebar-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  al-sidebar {
+    .al-sidebar {
+      color: md-color($primary, 400);
+      background: md-color($accent, 50);
+    }
+
+    .sidebar-title {
+      color: md-color($primary, 100);
+      background: md-color($primary, A200);
+      border-color: md-color($accent, 200);
+    }
+  }
+}
