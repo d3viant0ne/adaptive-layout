@@ -5,8 +5,8 @@
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
-  flex-content-toolbar {
-    .flex-content-toolbar {
+  al-content-toolbar {
+    .al-content-toolbar {
       color: md-color($accent, default-contrast);
       background: md-color($warn, 400);
     }
