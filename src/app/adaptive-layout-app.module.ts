@@ -6,15 +6,15 @@ import { MaterialModule } from '@angular/material';
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from './shared/shared-module';
-import { FlexLayoutAppComponent } from './flex-layout-app.component';
-import { FlexLayoutAppRoutingModule } from './flex-layout-app-routing.module';
+import { AdaptiveLayoutAppComponent } from './adaptive-layout-app.component';
+import { AdaptiveLayoutAppRoutingModule } from './adaptive-layout-app-routing.module';
 import { DashboardComponent } from './features/dashboard.component';
 import { StaticComponent } from './features/static/static.component';
 import { ResponsiveComponent } from './features/responsive/responsive.component';
 
 @NgModule({
   declarations: [
-    FlexLayoutAppComponent,
+    AdaptiveLayoutAppComponent,
     DashboardComponent,
     StaticComponent,
     ResponsiveComponent
@@ -22,12 +22,12 @@ import { ResponsiveComponent } from './features/responsive/responsive.component'
   imports: [
     BrowserModule,
     BrowserModule,
-    FlexLayoutAppRoutingModule,
+    AdaptiveLayoutAppRoutingModule,
     MaterialModule.forRoot(),
     FlexLayoutModule.forRoot(),
     SharedModule
   ],
   providers: [],
-  bootstrap: [FlexLayoutAppComponent]
+  bootstrap: [AdaptiveLayoutAppComponent]
 })
-export class FlexLayoutAppModule { }
+export class AdaptiveLayoutAppModule { }

@@ -1,15 +1,15 @@
 import { MatchMediaObservable, MediaChange } from '@angular/flex-layout';
-import { Component, ViewEncapsulation, OnInit, Inject, OnDestroy } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit, Inject, OnDestroy, AfterViewInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import 'rxjs/add/operator/filter';
 
 @Component({
-  selector: 'flex-layout-app',
-  templateUrl: './flex-layout-app.component.html',
-  styleUrls: ['./flex-layout-app.component.scss'],
+  selector: 'adaptive-layout-app',
+  templateUrl: './adaptive-layout-app.component.html',
+  styleUrls: ['./adaptive-layout-app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class FlexLayoutAppComponent implements OnDestroy {
+export class AdaptiveLayoutAppComponent implements OnDestroy, AfterViewInit {
   private _sidenavSubscription;
   private _sidebarSubscription;
   public isSidenavOpen = true;
@@ -25,14 +25,13 @@ export class FlexLayoutAppComponent implements OnDestroy {
       this.isSidenavOpen = (sidenavChange.mqAlias !== 'md' && sidenavChange.mqAlias !== 'sm' && sidenavChange.mqAlias !== 'xs');
       this.sidenavMediaChange = sidenavChange;
     });
+  }
+
+  ngAfterViewInit() {
     this._sidebarSubscription = this.$sidebarMedia.subscribe((sidebarChange: MediaChange) => {
-      this.isSidebarOpen = (sidebarChange.mqAlias !== 'lg' &&
-                            sidebarChange.mqAlias !== 'md' &&
-                            sidebarChange.mqAlias !== 'sm' &&
-                            sidebarChange.mqAlias !== 'xs');
-      // this.isSidebarOpen = (sidebarChange.mqAlias === 'xl');
+      this.isSidebarOpen = (sidebarChange.mqAlias === 'xl');
       this.sidebarMediaChange = sidebarChange;
-    });
+      });
   }
 
   ngOnDestroy() {

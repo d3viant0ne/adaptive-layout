@@ -1,7 +1,7 @@
-<flex-toolbar class='app-toolbar md-elevation-z5' fxLayoutAlign='start center'></flex-toolbar>
+<al-toolbar class='app-toolbar md-elevation-z5' fxLayoutAlign='start center'></al-toolbar>
 <md-sidenav-container>
   <md-sidenav #sidenav mode="side" [opened]="isSidenavOpen" class="app-sidenav">
-    <flex-sidenav></flex-sidenav>
+    <al-sidenav></al-sidenav>
   </md-sidenav>
   <md-sidenav #sidebar mode="side" class="app-sidebar" [opened]="isSidebarOpen" align="end">
     <p>End Side Drawer</p>
@@ -11,14 +11,14 @@
   <div class='app-container' fxLayout='column'>
     <div class='content-container' fxLayoutAlign="center">
       <div class='content-toolbar-container'>
-        <flex-content-toolbar class='content-toolbar' fxLayoutAlign='center'></flex-content-toolbar>
+        <al-content-toolbar class='content-toolbar' fxLayoutAlign='center'></al-content-toolbar>
       </div>
       <div class='app-content' fxLayoutAlign='center'>
         <router-outlet></router-outlet>
       </div>
     </div>
     <div class='footer-container'>
-      <flex-footer class='app-footer'></flex-footer>
+      <al-footer class='app-footer'></al-footer>
     </div>
   </div>
   <md-sidenav-container>

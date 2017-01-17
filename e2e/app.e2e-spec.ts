@@ -1,10 +1,10 @@
-import { FlexLayoutDemoPage } from './app.po';
+import { AdaptiveLayoutDemoPage } from './app.po';
 
-describe('flex-layout-demo App', function() {
-  let page: FlexLayoutDemoPage;
+describe('adaptive-layout-demo App', function() {
+  let page: AdaptiveLayoutDemoPage;
 
   beforeEach(() => {
-    page = new FlexLayoutDemoPage();
+    page = new AdaptiveLayoutDemoPage();
   });
 
   it('should display message saying app works', () => {

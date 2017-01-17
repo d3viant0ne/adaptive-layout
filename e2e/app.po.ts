@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class FlexLayoutDemoPage {
+export class AdaptiveLayoutDemoPage {
   navigateTo() {
     return browser.get('/');
   }

@@ -1,14 +1,18 @@
-import { FlexSidenavComponent } from './sidenav/sidenav.component';
+import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {NgModule} from '@angular/core';
-import {HttpModule} from '@angular/http';
-import {MaterialModule} from '@angular/material';
-import {BrowserModule} from '@angular/platform-browser';
-import {RouterModule} from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { FlexToolbarComponent } from './toolbar/toolbar.component';
-import { FlexContentToolbarComponent } from './content-toolbar/content-toolbar.component';
-import { FlexFooterComponent } from './footer/footer.component';
+import { ContentToolbarComponent } from './content-toolbar/content-toolbar.component';
+import { ContentToolbarService } from './content-toolbar/content-toolbar.service';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { SidebarService } from './sidebar/sidebar.service';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { SidenavService } from './sidenav/sidenav.service';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -19,9 +23,24 @@ import { FlexFooterComponent } from './footer/footer.component';
     MaterialModule,
     FlexLayoutModule
   ],
-  declarations: [FlexToolbarComponent, FlexSidenavComponent, FlexContentToolbarComponent, FlexFooterComponent],
-  exports: [FlexToolbarComponent, FlexSidenavComponent, FlexContentToolbarComponent, FlexFooterComponent],
-  providers: [],
-  entryComponents: [],
+  declarations: [
+    FlexToolbarComponent,
+    SidenavComponent,
+    SidebarComponent,
+    ContentToolbarComponent,
+    FooterComponent
+    ],
+  exports: [
+    FlexToolbarComponent,
+    SidenavComponent,
+    SidebarComponent,
+    ContentToolbarComponent,
+    FooterComponent
+    ],
+  providers: [
+    SidenavService,
+    SidebarService,
+    ContentToolbarService
+    ]
 })
-export class SharedModule {}
+export class SharedModule { }
