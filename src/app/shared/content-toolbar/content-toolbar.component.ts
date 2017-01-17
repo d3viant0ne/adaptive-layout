@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'al-content-toolbar',
+  selector: 'adl-content-toolbar',
   template: `
-      <md-toolbar class="al-content-toolbar"></md-toolbar>
+      <md-toolbar class="adl-content-toolbar"></md-toolbar>
     `,
   styleUrls: ['./content-toolbar.component.scss']
 })

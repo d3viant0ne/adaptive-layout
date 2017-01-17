@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 import 'rxjs/add/operator/filter';
 
 @Component({
-  selector: 'al-sidbar',
+  selector: 'adl-sidbar',
   template: `
     <div class="sidebar-title">
 

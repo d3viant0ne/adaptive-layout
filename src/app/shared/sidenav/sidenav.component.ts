@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 import 'rxjs/add/operator/filter';
 
 @Component({
-  selector: 'al-sidenav',
+  selector: 'adl-sidenav',
   template: `
     <div class="sidenav-title">
 

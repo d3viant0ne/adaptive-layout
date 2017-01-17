@@ -5,8 +5,8 @@
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
-  al-content-toolbar {
-    .al-content-toolbar {
+  adl-content-toolbar {
+    .adl-content-toolbar {
       color: md-color($accent, default-contrast);
       background: md-color($warn, 400);
     }

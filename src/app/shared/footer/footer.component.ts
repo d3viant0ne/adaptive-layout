@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'al-footer',
+  selector: 'adl-footer',
   template: `
-    <footer class="al-footer">
+    <footer class="adl-footer">
     Powered by Angular. License MIT.
     </footer>
     `,

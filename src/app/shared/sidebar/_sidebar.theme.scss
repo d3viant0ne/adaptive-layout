@@ -5,8 +5,8 @@
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
-  al-sidebar {
-    .al-sidebar {
+  adl-sidebar {
+    .adl-sidebar {
       color: md-color($primary, 400);
       background: md-color($accent, 50);
     }
