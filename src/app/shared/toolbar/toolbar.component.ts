@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'flex-toolbar',
+  selector: 'al-toolbar',
   template: `
-    <md-toolbar class="flex-toolbar">
+    <md-toolbar class="al-toolbar">
       <div fxLayout="row" fxLayoutAlign="start center">
         <button md-icon-button fxHide="false" fxHide.gt-md>
           <md-icon>menu</md-icon>

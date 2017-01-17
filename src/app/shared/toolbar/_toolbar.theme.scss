@@ -5,8 +5,8 @@
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
-  flex-toolbar {
-    .flex-toolbar {
+  al-toolbar {
+    .al-toolbar {
       color: md-color($primary, 200);
       background: md-color($primary, 600);
     }
