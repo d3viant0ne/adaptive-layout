@@ -5,8 +5,8 @@
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
-  flex-sidenav {
-    .flex-sidenav {
+  al-sidenav {
+    .al-sidenav {
       color: md-color($primary, 100);
       background: md-color($primary);
     }

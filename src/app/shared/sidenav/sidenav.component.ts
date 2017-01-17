@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 import 'rxjs/add/operator/filter';
 
 @Component({
-  selector: 'flex-sidenav',
+  selector: 'al-sidenav',
   template: `
     <div class="sidenav-title">
 
@@ -13,6 +13,6 @@ import 'rxjs/add/operator/filter';
   styleUrls: ['./sidenav.component.scss']
 })
 
-export class FlexSidenavComponent {
+export class SidenavComponent {
 
 }
