@@ -1,6 +1,6 @@
 import { MatchMediaObservable, MediaChange } from '@angular/flex-layout';
 import { Component, ViewEncapsulation, OnInit, Inject, OnDestroy, AfterViewInit } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Subscription } from 'rxjs/Rx';
 import 'rxjs/add/operator/filter';
 
 @Component({
