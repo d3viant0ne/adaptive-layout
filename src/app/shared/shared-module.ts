@@ -1,3 +1,4 @@
+import { AdaptiveLayoutService } from './services/adaptive-layout/adaptive-layout.service';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
@@ -40,7 +41,8 @@ import { FooterComponent } from './footer/footer.component';
   providers: [
     SidenavService,
     SidebarService,
-    ContentToolbarService
+    ContentToolbarService,
+    AdaptiveLayoutService
     ]
 })
 export class SharedModule { }
